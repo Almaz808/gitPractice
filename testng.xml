@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression Test Suite" verbose="1" parallel="classes" thread-count="3">
+<test verbose="2" preserve-order="true" name="/Users/almazkaparov/Desktop/TAF_Fall2022">
+        <classes>
+            <class name="_00_Practice.TestUser">
+                <methods>
+                    <include name="createNewUserTest"/>
+                    <include name="checkCreatedUser"/>
+                    <include name="test1"/>
+                </methods>
+            </class>
+            <class name="_22_TestNG.TestNG">
+                <methods>
+                    <include name="testSumFunction"/>
+                    <include name="testSumFunction2"/>
+                </methods>
+            </class>
+            <class name="_22_TestNG.TestNgAnnotation">
+                <methods>
+                    <include name="tearDown"/>
+                    <include name="beforeMethod"/>
+                    <include name="afterMethod"/>
+                    <include name="testFoodTitle"/>
+                    <include name="testPharmacyTitle"/>
+                    <include name="testShops"/>
+                    <include name="setUp"/>
+                </methods>
+            </class>
+            <class name="_22_TestNG.XMLDataProvider">
+                <methods>
+                    <include name="myTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
